@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="scripts/pixi.js?1500"></script>
+	<script src="scripts/pixi-spine.js?1500"></script>
+
+</head>
+
+<body>
+	<script>
+		var app = new PIXI.Application(1920,1080);
+		document.body.appendChild(app.view);
+        
+		PIXI.loader
+			.add('effectC_03', 'spineTest/export/effectC/effectC_02.json?1500')
+			.load(onAssetsLoaded);
+
+		app.stage.interactive = true;
+        	
+		function onAssetsLoaded(loader, res) {
+            
+			var effectC = new PIXI.spine.Spine(res.effectC_03.spineData);
+
+			// set the position
+			effectC.x = app.screen.width / 2;
+			effectC.y = app.screen.height/2;
+
+			effectC.scale.set(0.5);
+
+			effectC.state.setAnimation(0, 'effectC', true);
+
+			app.stage.addChild(effectC);
+		
+
+			//console.log("effectC.state",effectC.state)
+          
+          //  console.log("loader",PIXI.loader)
+		}
+	</script>
+</body>
+</html>
