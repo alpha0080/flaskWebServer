@@ -2,14 +2,29 @@ import os
 import json
 import sys
 
+
+
 from flask import Flask, render_template, request
 from flask_dropzone import Dropzone
+from flask import jsonify
 
 
 ## initial
 sys.path.append("c:/webServer/python")
 
+##alpha script
+import postgreSQLCall
+reload(postgreSQLCall)
+
+print "postgreSQLCall",postgreSQLCall
 sysPath = sys.path
+
+
+class callTactic():
+
+    def __init__(self, name):
+        self.name = name    
+
 
 
 
@@ -110,8 +125,124 @@ def cleanReq():
   #  else:
     #    return jsonify({'result':'error'})
    # 
+
+
+
+##AJAX test  Start####    
+@app.route('/jqTest',methods=['POST','GET'])
+def jqTest():
     
+    return render_template('jqTestImport.html')
+
+
+
+@app.route('/mystring')
+def mystring():
+    return 'my string'
+
+
+
+@app.route('/mydict', methods=['GET', 'POST'])
+def mydict():
+    d = {'name': 'xmr', 'age': 18}
+    #getDB = postgreSQLCall.callPostgre('3D_db','postgres','5j/u.42017','192.168.161.47','5432')  
+    #getTacticDB = postgreSQLCall.callPostgre('simpleslot','postgres','','192.168.163.60','5432')  
+    getSthpwDB = postgreSQLCall.callPostgre('sthpw','postgres','','192.168.163.60','5432')   
+  #  projectRows = self.getTacticDB.getRowDataFromTable('game')
+   # assetRows = getTacticDB.getRowDataFromTable('assets')
+    userProcessData =  getSthpwDB.getRowDataFromTable('login')
+    #print "getTacticDB",getTacticDB
+    #print "getSthpwDB",getSthpwDB
+   # print "projectRows",projectRows
+   # print "userProcessData",userProcessData
+    print "userProcessData",userProcessData[0][1]
+    return jsonify(userProcessData)
     
+@app.route('/mylist')
+def mylist():
+    l = ['xmr', 18]
+    print('mylist')
+    return json.dumps(l)  
+
+
+
+@app.route('/name', methods=['POST'])
+def getname():
+    firstname = request.form['firstname']
+    lastname = request.form['lastname']
+    d = {'name': firstname + ' ' + lastname, 'age': 18}
+    print(d)
+    return jsonify(d)
+
+
+
+
+@app.route('/mytable')
+def mytable():
+    table = [('id', 'name', 'age', 'score'),
+        ('1', 'xiemanrui', '18', '100'),
+        ('2', 'yxx', '18', '100'),
+        ('3', 'yaoming', '37', '88')]
+
+    print('mytable')
+    data = json.dumps(table)
+    print(data)
+    return data
+
+
+@app.route("/testtest",methods=['POST','GET'])
+def testtest():
+    return "i'm test"
+
+
+
+
+
+
+
+
+
+
+##KPI indexPage start
+
+
+
+
+@app.route("/indexPage",methods=['POST','GET'])
+def indexPage():
+   # return "i'm test"
+
+    return render_template('indexPageTest.html')
+
+
+
+
+
+
+##KPI indexPage End
+
+
+
+
+
+
+##AJAX test####    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
         
 def getEffectName(jsonFile):
