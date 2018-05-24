@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+    <link href="{{url_for('static',filename='bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <script src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}" crossorigin="anonymous"></script>
+
+    <link href="{{url_for('static',filename='css/fileinput.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/fileinput-rtl.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/jquery-ui.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='dropzone/dropzone.css')}}" rel="stylesheet">
+    <script src="{{url_for('static', filename='jqueryUI/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='jqueryUI/jqpaginator.min.js')}}"></script>
+
+    <script src="{{url_for('static', filename='dropzone/dropzone.js')}}"></script>
+    
+        -->
+    <link href="{{url_for('static',filename='css/jquery-ui.css')}}" rel="stylesheet">
+    <script src="{{url_for('static', filename='jqueryUI/jquery.js')}}"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='jqueryUI/jqpaginator.min.js')}}"></script>
+
+    <!--
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    -->
+
+    <title>Document</title>
+</head>
+
+<body>
+   <div style="height: 300 px" id="gly">gggg</div>
+    <nav aria-label="Page navigation example">
+       
+        <ul class="pagination" id="pageTest">
+            <!--
+            <li class="page-item" id= "a1"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            -->
+        </ul>
+    </nav>
+
+    <script>
+        var $prev = $('<li class="page-item" id= "btwPrew"><a class="page-link" href="#">Prev</a></li>')
+        var $next = $('<li class="page-item" id= "btwNext"><a class="page-link" href="#">>Next</a></li>')
+
+        //var $td1 = $('<td class="td_content1">' + i * 1 + '</td>');
+
+        $("#pageTest").append($prev);
+
+        for (var i = 0; i < 10; i++) {
+            var $bet = $('<li class="page-item"' +
+                         'id = "btw'+i +'"'+
+                         '>' +
+                '<a class="page-link" href="#">' +
+                i +
+                '</a></li>'
+            );
+            $("#pageTest").append($bet);
+        }
+        $("#pageTest").append($next);
+
+       
+
+        $(function() {  //get li text
+            $('li').click(function() {
+                //console.log($(this).text());
+                console.log($(this).attr("id")); 
+                console.log($(this).text()); 
+            });
+        });
+        //(this).attr("id");
+    </script>
+
+
+
+
+
+</body>
+
+</html>

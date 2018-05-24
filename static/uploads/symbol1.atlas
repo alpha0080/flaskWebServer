@@ -1,0 +1,300 @@
+
+symbol1.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_eyeball
+  rotate: false
+  xy: 1966, 480
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+R_eyeball
+  rotate: false
+  xy: 1550, 165
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+R_shoulder
+  rotate: false
+  xy: 1608, 335
+  size: 153, 77
+  orig: 153, 77
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 54
+  size: 236, 221
+  orig: 236, 221
+  offset: 0, 0
+  index: -1
+buddha_01
+  rotate: false
+  xy: 1665, 303
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+buddha_02
+  rotate: false
+  xy: 397, 55
+  size: 25, 24
+  orig: 25, 24
+  offset: 0, 0
+  index: -1
+buddha_03
+  rotate: false
+  xy: 154, 19
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+buddha_04
+  rotate: false
+  xy: 1550, 185
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+buddha_crown
+  rotate: false
+  xy: 1608, 414
+  size: 157, 85
+  orig: 157, 85
+  offset: 0, 0
+  index: -1
+caps_01
+  rotate: true
+  xy: 240, 53
+  size: 26, 155
+  orig: 26, 155
+  offset: 0, 0
+  index: -1
+caps_02
+  rotate: true
+  xy: 2, 2
+  size: 50, 150
+  orig: 50, 150
+  offset: 0, 0
+  index: -1
+caps_03
+  rotate: false
+  xy: 1608, 229
+  size: 55, 104
+  orig: 55, 104
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 1767, 424
+  size: 130, 75
+  orig: 130, 75
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 1456, 100
+  size: 92, 119
+  orig: 92, 119
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 2, 277
+  size: 236, 222
+  orig: 236, 222
+  offset: 0, 0
+  index: -1
+frame_light_0001
+  rotate: false
+  xy: 240, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0002
+  rotate: false
+  xy: 240, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0003
+  rotate: false
+  xy: 392, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0004
+  rotate: false
+  xy: 240, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0005
+  rotate: false
+  xy: 392, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0006
+  rotate: false
+  xy: 544, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0007
+  rotate: false
+  xy: 392, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0008
+  rotate: false
+  xy: 544, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0009
+  rotate: false
+  xy: 696, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0010
+  rotate: false
+  xy: 544, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0011
+  rotate: false
+  xy: 696, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0012
+  rotate: false
+  xy: 848, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0013
+  rotate: false
+  xy: 696, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0014
+  rotate: false
+  xy: 848, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0015
+  rotate: false
+  xy: 1000, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0016
+  rotate: false
+  xy: 848, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0017
+  rotate: false
+  xy: 1000, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0018
+  rotate: false
+  xy: 1152, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0019
+  rotate: false
+  xy: 1000, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0020
+  rotate: false
+  xy: 1152, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0021
+  rotate: false
+  xy: 1304, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0022
+  rotate: false
+  xy: 1152, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0023
+  rotate: false
+  xy: 1304, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0024
+  rotate: false
+  xy: 1456, 361
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0025
+  rotate: false
+  xy: 1304, 81
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+frame_light_0026
+  rotate: false
+  xy: 1456, 221
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 1899, 439
+  size: 65, 60
+  orig: 65, 60
+  offset: 0, 0
+  index: -1

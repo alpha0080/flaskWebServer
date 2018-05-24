@@ -1,0 +1,55 @@
+
+symbol4.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Color_light.0003
+  rotate: false
+  xy: 2, 111
+  size: 320, 320
+  orig: 320, 320
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 577, 206
+  size: 233, 225
+  orig: 233, 225
+  offset: 0, 0
+  index: -1
+foreground
+  rotate: false
+  xy: 2, 2
+  size: 235, 107
+  orig: 235, 107
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 324, 188
+  size: 251, 243
+  orig: 251, 243
+  offset: 0, 0
+  index: -1
+meerkat_01
+  rotate: false
+  xy: 812, 227
+  size: 114, 204
+  orig: 114, 204
+  offset: 0, 0
+  index: -1
+meerkat_02
+  rotate: true
+  xy: 577, 107
+  size: 97, 170
+  orig: 97, 170
+  offset: 0, 0
+  index: -1
+meerkat_03
+  rotate: true
+  xy: 324, 86
+  size: 100, 178
+  orig: 100, 178
+  offset: 0, 0
+  index: -1

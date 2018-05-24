@@ -58,9 +58,11 @@ def upload():
 
 
 
-@app.route('/uitest/')
-def uitest():
-    return render_template('uitest.html')
+@app.route('/projectMain')
+def projectMain():
+    
+   # return "project Main"
+    return render_template('main.html')
 
 
 
@@ -211,7 +213,8 @@ def testtest():
 @app.route("/indexPage",methods=['POST','GET'])
 def indexPage():
    # return "i'm test"
-
+    app.config['UPLOADED_PATH'] = os.getcwd() + '/upload'
+    print "path",app.config['UPLOADED_PATH']
     return render_template('indexPageTest.html')
 
 
@@ -222,6 +225,18 @@ def indexPage():
 ##KPI indexPage End
 
 
+##dropzone upload test
+
+@app.route('/dropzoneUploadTest', methods=['GET', 'POST'])
+def upload_file():
+    
+    import os
+    app.config['UPLOADED_PATH'] ="c:/webServer/uploads"
+    if request.method == 'POST':
+        for f in request.files.getlist('file'):
+            f.save(os.path.join(app.config['UPLOADED_PATH'], f.filename))
+    #return "upload test"
+    return render_template('dropzoneUploadTest.html')
 
 
 
