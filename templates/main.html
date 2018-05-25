@@ -40,30 +40,37 @@
 </head>
 
 <body>
-    <!--頁面  -->
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center" id="pageTest">
-            <!--
+ 
+    <div class="fixed-bottom">
+       
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center" id="pageTest">
+                <!--
             <li class="page-item" id= "a1"><a class="page-link" href="#">Previous</a></li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
             -->
-        </ul>
-    </nav>
-    <!--頁面  -->
-    <div class="container-fluid">
-        <div class="row clearfix">
-            <div class="col-md-2 column" style="background-color: rgb(60,60,60)">
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="container-fluid"  >
+        <div class="row clearfix ">
+            <div class="col-md-2 column " style="background-color: rgb(60,60,60)">
+                <h5 class="sticky-top">hhhh</h5>
             </div>
-            <div class="col-md-10 column" style="background-color: rgb(180,180,180);padding: 0px;font-size: 14px">
-                <table class="table table-striped">
-                    <thead class="thead-dark" style="background-color:rgb(40,40,40);color: azure">
+            <div class="col-md-10 column " style="background-color: rgb(180,180,180);padding: 0px;font-size: 14px;">
+
+                <table class="table table-striped  ">
+                    <thead class="thead-dark  sticky-top" style="background-color:rgb(40,40,40);color: azure;padding: 100px">
                         <tr>
 
                             <div class="btn-group btn-group-toggle  btn-sm " style="padding: 2px " data-toggle="buttons">
-                                <label class="btn btn-secondary active ">
+                                <label class="btn btn-secondary active  ">
                                     <input type="radio" name="options" id="option1" autocomplete="off" checked> 進行中
                                   </label>
                                 <label class="btn btn-secondary">
@@ -93,7 +100,7 @@
                         </tr>
                     </thead>
                     <tbody id="projectTable">
-                       <!--
+                        <!--
                         <tr>
                             <td style="vertical-align: middle">
                                 1
@@ -207,43 +214,43 @@
         });
 
 
-        var maxList= 10
+        var maxList = 10
         var startNum = 10
         var endNum = 55
-        createTable(maxList,startNum,endNum)
+        createTable(maxList, startNum, endNum)
 
-        function createTable(maxList,startNum,endNum) {
-            for (var i = startNum; i < endNum+1; i++) {
-                
-                var $listBwt_A = '<a class="btn btn-secondary btn-sm" href="#" id = "asset_'+
+        function createTable(maxList, startNum, endNum) {
+            for (var i = startNum; i < endNum + 1; i++) {
+
+                var $listBwt_A = '<a class="btn btn-secondary btn-sm" href="#" id = "asset_' +
                     i +
-                '">A</a>'
-                var $listBwt_S = '<a class="btn btn-success btn-sm" href="#" id = "shot_'+
+                    '">A</a>'
+                var $listBwt_S = '<a class="btn btn-success btn-sm" href="#" id = "shot_' +
                     i +
-                '">S</a>'
-                var $listBwt_Q = '<a class="btn btn-info btn-sm" href="#" id = "qc'+
+                    '">S</a>'
+                var $listBwt_Q = '<a class="btn btn-info btn-sm" href="#" id = "qc' +
                     i +
-                '">Q</a>'
-                
+                    '">Q</a>'
+
                 var $tr = $('<tr class="tr_content"></tr>');
-                var $td1 = $('<td style="vertical-align: middle">'+i+'</td>');
-                var $td2 = $('<td style="vertical-align: middle">'+
-                             '<img src="http://vg.com/assets/simpleslot/battle_of_ball/icon/battle_of_ball_v001_icon.png" class="img-thumbnail ">' +
-                             '</td>');
-                var $td3 = $('<td style="vertical-align: middle">'+
-                             '中文專案名稱' +
-                             '</td>');
-                
-                var $td4 = $('<td style="vertical-align: middle">'+
-                             'project Name'+
-                             '</td>');
-                var $td5 = $('<td style="vertical-align: middle">'+
-                             $listBwt_A +
-                             $listBwt_S +
-                             $listBwt_Q +
-                             '</td>');
-                
-                
+                var $td1 = $('<td style="vertical-align: middle">' + i + '</td>');
+                var $td2 = $('<td style="vertical-align: middle">' +
+                    '<img src="http://vg.com/assets/simpleslot/battle_of_ball/icon/battle_of_ball_v001_icon.png" class="img-thumbnail ">' +
+                    '</td>');
+                var $td3 = $('<td style="vertical-align: middle">' +
+                    '中文專案名稱' +
+                    '</td>');
+
+                var $td4 = $('<td style="vertical-align: middle">' +
+                    'project Name' +
+                    '</td>');
+                var $td5 = $('<td style="vertical-align: middle">' +
+                    $listBwt_A +
+                    $listBwt_S +
+                    $listBwt_Q +
+                    '</td>');
+
+
                 $("#projectTable").append($tr);
                 $("#projectTable").append($td1);
 
