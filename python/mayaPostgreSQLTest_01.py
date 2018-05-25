@@ -16,7 +16,8 @@ shotRows = getTacticDB.getRowDataFromTable('shot')
 
 userProcessData =  getSthpwDB.getRowDataFromTable('login')
 taskData =  getSthpwDB.getRowDataFromTable('task')
-
+fileData = getSthpwDB.getRowDataFromTable('file')
+filesCount = len(fileData)
 userCount = len(userProcessData)
 for i in range(0,userCount):
     print userProcessData[i][1]
@@ -25,11 +26,15 @@ for i in range(0,userCount):
 taskData[-1][32]
 
 shotCount =  len(shotRows)
-
+fileData[-1][20]
 for i in range(0,shotCount):
     if shotRows[i][10] == "GAME00803":  #define the qc project, that name is qc_db,game code is "GAME00803"
         print shotRows[i]
 
-   # print userProcessData[i][19]
-
-#print userProcessData[0]
+for i in range(0,filesCount):
+    if fileData[i][20] == "GAME00803":
+        print fileData[i]
+        
+        
+    
+    
