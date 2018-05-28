@@ -1,55 +1,223 @@
 
 symbol4.png
-size: 1024,512
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Color_light.0003
+images/symbol4
   rotate: false
-  xy: 2, 111
-  size: 320, 320
-  orig: 320, 320
+  xy: 2, 1412
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1
-bg
+images/symbol4_0001
   rotate: false
-  xy: 577, 206
-  size: 233, 225
-  orig: 233, 225
+  xy: 288, 1694
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1
-foreground
+images/symbol4_0002
+  rotate: false
+  xy: 2, 1130
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0003
+  rotate: false
+  xy: 288, 1412
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0004
+  rotate: false
+  xy: 574, 1694
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0005
+  rotate: false
+  xy: 2, 848
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0006
+  rotate: false
+  xy: 288, 1130
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0007
+  rotate: false
+  xy: 574, 1412
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0008
+  rotate: false
+  xy: 860, 1694
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0009
+  rotate: false
+  xy: 2, 566
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0010
+  rotate: false
+  xy: 288, 848
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0011
+  rotate: false
+  xy: 574, 1130
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0012
+  rotate: false
+  xy: 860, 1412
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0013
+  rotate: false
+  xy: 1146, 1694
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0014
+  rotate: false
+  xy: 2, 284
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0015
+  rotate: false
+  xy: 288, 566
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0016
+  rotate: false
+  xy: 574, 848
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0017
+  rotate: false
+  xy: 860, 1130
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0018
+  rotate: false
+  xy: 1146, 1412
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0019
+  rotate: false
+  xy: 1432, 1694
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0020
   rotate: false
   xy: 2, 2
-  size: 235, 107
-  orig: 235, 107
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1
-frame
+images/symbol4_0021
   rotate: false
-  xy: 324, 188
-  size: 251, 243
-  orig: 251, 243
+  xy: 288, 284
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1
-meerkat_01
+images/symbol4_0022
   rotate: false
-  xy: 812, 227
-  size: 114, 204
-  orig: 114, 204
+  xy: 574, 566
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1
-meerkat_02
-  rotate: true
-  xy: 577, 107
-  size: 97, 170
-  orig: 97, 170
+images/symbol4_0023
+  rotate: false
+  xy: 860, 848
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1
-meerkat_03
-  rotate: true
-  xy: 324, 86
-  size: 100, 178
-  orig: 100, 178
+images/symbol4_0024
+  rotate: false
+  xy: 1146, 1130
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0025
+  rotate: false
+  xy: 1432, 1412
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0026
+  rotate: false
+  xy: 1718, 1694
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0027
+  rotate: false
+  xy: 288, 2
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0028
+  rotate: false
+  xy: 574, 284
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0029
+  rotate: false
+  xy: 860, 566
+  size: 284, 280
+  orig: 284, 280
+  offset: 0, 0
+  index: -1
+images/symbol4_0030
+  rotate: false
+  xy: 2, 1694
+  size: 284, 280
+  orig: 284, 280
   offset: 0, 0
   index: -1

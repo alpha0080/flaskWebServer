@@ -230,13 +230,28 @@ def indexPage():
 @app.route('/dropzoneUploadTest', methods=['GET', 'POST'])
 def upload_file():
     
-    import os
+    #import os
     app.config['UPLOADED_PATH'] ="c:/webServer/uploads"
     if request.method == 'POST':
         for f in request.files.getlist('file'):
             f.save(os.path.join(app.config['UPLOADED_PATH'], f.filename))
     #return "upload test"
     return render_template('dropzoneUploadTest.html')
+
+
+
+
+
+@app.route('/qclist', methods=['GET', 'POST'])
+def qclist():
+    
+   # return "QC List Test v 0.01"
+    app.config['UPLOADED_PHOTOS_DEST']="//mcd-one/3d_project/temp"
+    files_list = os.listdir(app.config['UPLOADED_PHOTOS_DEST'])
+   # return render_template('manage.html', files_list=files_list)
+    return render_template('qclist.html', files_list=files_list)
+
+
 
 
 
