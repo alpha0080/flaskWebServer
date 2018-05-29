@@ -148,17 +148,19 @@ def mystring():
 def mydict():
     d = {'name': 'xmr', 'age': 18}
     #getDB = postgreSQLCall.callPostgre('3D_db','postgres','5j/u.42017','192.168.161.47','5432')  
-    #getTacticDB = postgreSQLCall.callPostgre('simpleslot','postgres','','192.168.163.60','5432')  
+    getTacticDB = postgreSQLCall.callPostgre('simpleslot','postgres','','192.168.163.60','5432')  
     getSthpwDB = postgreSQLCall.callPostgre('sthpw','postgres','','192.168.163.60','5432')   
+    projectRows =getTacticDB.getRowDataFromTable('game')  #project data
   #  projectRows = self.getTacticDB.getRowDataFromTable('game')
    # assetRows = getTacticDB.getRowDataFromTable('assets')
     userProcessData =  getSthpwDB.getRowDataFromTable('login')
+    projectRows = list(reversed(projectRows)) #reversed
     #print "getTacticDB",getTacticDB
     #print "getSthpwDB",getSthpwDB
    # print "projectRows",projectRows
-   # print "userProcessData",userProcessData
-    print "userProcessData",userProcessData[0][1]
-    return jsonify(userProcessData)
+   # print "userProcessData",userProcessDatas
+    #print "userProcessData",userProcessData[0][1]
+    return jsonify(projectRows)  # 
     
 @app.route('/mylist')
 def mylist():
@@ -249,7 +251,7 @@ def qclist():
     app.config['UPLOADED_PHOTOS_DEST']="//mcd-one/3d_project/temp"
     files_list = os.listdir(app.config['UPLOADED_PHOTOS_DEST'])
    # return render_template('manage.html', files_list=files_list)
-    return render_template('qclist.html', files_list=files_list)
+    return render_template('qclist2.html', files_list=files_list)
 
 
 

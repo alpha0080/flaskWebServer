@@ -17,6 +17,12 @@ shotRows = getTacticDB.getRowDataFromTable('shot')
 userProcessData =  getSthpwDB.getRowDataFromTable('login')
 taskData =  getSthpwDB.getRowDataFromTable('task')
 fileData = getSthpwDB.getRowDataFromTable('file')
+
+projectRows =getTacticDB.getRowDataFromTable('game')
+projectRows = list(reversed(projectRows))
+projectRows[0][8] #gameName
+projectRows[0][10] #gameName
+
 filesCount = len(fileData)
 userCount = len(userProcessData)
 for i in range(0,userCount):
